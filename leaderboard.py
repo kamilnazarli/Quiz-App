@@ -27,5 +27,3 @@ class LeaderBoard:
         except Exception as e:
             print(e)
             print("There is an error with opening the file.")
-    
-    

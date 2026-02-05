@@ -46,17 +46,9 @@ class Quiz:
         print(f"Quiz is finished.Your result {score}/5.({LeaderBoard.change_format(duration)} - the time that you used)")
         if score == 5:
             play_sound("correct.wav")
-        self.save_score(self.nickname, score, duration)###########
+        self.save_score(self.nickname, score, duration)
     
     def save_score(self, nickname, score, duration):
         with open("leaderboard.txt", "a") as file:
             file.write(f"{nickname}|{score}|{duration}\n")
         print("Your score has been saved.")
-
-
-
-
-                     
-
-        
-

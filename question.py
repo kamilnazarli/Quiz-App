@@ -18,4 +18,3 @@ class Question:
         
         option_display = "\n".join(options)
         return f"{self.question}\n{option_display}"
-    
